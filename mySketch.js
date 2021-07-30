@@ -11,7 +11,7 @@ function setup() {
 	canvas = createCanvas(windowWidth, windowHeight);
 	canvas.position(0,0);
 	canvas.style('z-index','-1');
-	background(230);
+	background(0);
 	frameRate(120);
 	const r = new Rectangle(0, 0, width, height);
 }
@@ -22,7 +22,7 @@ function windowResized(){
 }
 
 function draw() {
-	background(230);
+	background(0);
 	
 	let fr = floor(frameRate());
 	f += fr;
@@ -33,7 +33,7 @@ function draw() {
 	
 	push();
 	noStroke();
-	fill(0);
+	fill(250);
 	text('avg. frame rate: ' + af, 0, 10);
 	text('particles: ' + particles.length, 0, 23);
 	pop();

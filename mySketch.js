@@ -8,7 +8,9 @@ var f = 0;
 var af = 60;
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	canvas = createCanvas(windowWidth, windowHeight);
+	canvas.position(0,0);
+	canvas.style('z-index','-1');
 	background(0);
 	frameRate(120);
 	const r = new Rectangle(0, 0, width, height);

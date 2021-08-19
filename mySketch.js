@@ -51,7 +51,7 @@ function draw() {
 	}
 }
 
-function mousePressed() {
+function mouseDragged() {
 	particles.push(new Dot());
 }
 
